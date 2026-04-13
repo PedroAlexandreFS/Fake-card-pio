@@ -1,0 +1,229 @@
+/*==== COFIGURAÇÕES GERAIS ====*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*==== CONTEUDO PRINCIPAL ====*/
+main {
+    display: flex;
+    margin: 50px;
+}
+
+/*=== AS TRES DIVS PRINCIPAIS*/
+.sopa,
+.semana,
+.especial {
+    flex: 1;
+    height: 100vh;
+    align-content: flex-start;
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 5px;
+}
+
+/*==== DIV DA ESQUERDA ====*/
+.sopa h2 {
+    padding-top: 30px;
+    color: white;
+    white-space: normal;
+}
+
+.sopa h2 span {
+    letter-spacing: 4px;
+    display: block;
+    font-size: 40px;
+    color: rgb(244, 201, 99);
+
+}
+
+.sopacima {
+    background: rgb(36, 9, 9);
+    height: 50%;
+}
+
+.image {
+    position: absolute;
+    left: 110px;
+    top: 280px;
+
+}
+
+img {
+    border-radius: 10px;
+}
+
+
+.sopabaixo {
+    background: rgb(235, 101, 35);
+    height: 50%;
+    padding-top: 80px;
+}
+
+.sopabaixo h2 {
+    font-size: 40px;
+    letter-spacing: 4px;
+}
+
+.sopabaixo p {
+    font-size: 18px;
+    padding-top: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*==== DIV DO CENTRO ====*/
+
+.semana {
+    background: white;
+}
+
+.semana h2 {
+    margin: 0 50px;
+    padding: 30px;
+    font-size: 40px;
+    color: rgb(235, 101, 35);
+    border-bottom: 2px dotted rgb(36, 9, 9);
+}
+
+.h2meio {
+    color: rgb(36, 9, 9);
+    display: block;
+
+}
+
+.semana h3,
+.especialmeio h3 {
+    font-size: 27px;
+    padding-top: 20px;
+    color: rgb(235, 101, 35);
+}
+
+.semana p,
+.especialmeio p {
+    padding-top: 5px;
+    padding-bottom: 7px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.especialtop {
+    background: rgb(36, 9, 9);
+}
+
+.especial h2 span {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    display: block;
+    color: white;
+}
+
+.especialtop h2 {
+    padding: 35px;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #f3d08b;
+
+}
+
+.especialmeio {
+    background: #f3d08b;
+}
+
+.especialbaixo {
+    background: rgb(235, 101, 35);
+}
+
+.especialbaixo p {
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-top: 9px;
+    padding-bottom: 7px;
+}
+
+.especialbaixo h2 {
+    color: rgb(36, 9, 9);
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 600px) {
+    main {
+        flex-direction: column;
+
+    }
+
+    img {
+        display: none;
+    }
+
+    .sopacima {
+        padding-bottom: 10px;
+    }
+
+    .sopabaixo {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+    main {
+        flex-direction: column;
+
+    }
+
+    img {
+        display: none;
+    }
+
+    .sopacima {
+        padding-bottom: 10px;
+    }
+
+    .sopabaixo {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+}
+
+
+
+/* Dispostivos Médios (Tablets deitados, 768px para cima) */
+@media only screen and (min-width: 768px) {
+    main {
+        flex-direction: column;
+
+    }
+
+    img {
+        display: none;
+    }
+
+    .sopacima {
+        padding-bottom: 10px;
+    }
+
+    .sopabaixo {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+}
+
+
+/* Dispostivos Largos (laptops/desktops, 992px para cima) */
+@media only screen and (min-width: 992px) {
+    main {
+        flex-direction: row;
+
+    }
+
+}
